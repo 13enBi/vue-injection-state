@@ -1,0 +1,36 @@
+{
+  "name": "vue-injection-state",
+  "version": "0.0.1",
+  "description": "vue injection state by composition api",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup-node",
+    "release": "npm run build && bumpp --commit --tag --push && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13enBi/vue-injection-state.git"
+  },
+  "keywords": [
+    "vue",
+    "injection state",
+    "composition api"
+  ],
+  "author": "13enbi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/13enBi/vue-injection-state/issues"
+  },
+  "homepage": "https://github.com/13enBi/vue-injection-state#readme",
+  "devDependencies": {
+    "bumpp": "^7.1.1",
+    "tsup": "^5.12.6",
+    "typescript": "^4.6.4",
+    "vue": "^3.2.33"
+  }
+}
