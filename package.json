@@ -1,6 +1,6 @@
 {
   "name": "vue-injection-state",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "vue injection state by composition api",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
