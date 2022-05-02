@@ -5,7 +5,7 @@ const VOID = Symbol();
 export type Store<R, T extends any = void> = {
 	useProvide: (initialState: T) => R;
 	useInject: () => R;
-	Provider: DefineComponent<T extends undefined ? { initialState?: T } : { initialState: T }>;
+	Provider: DefineComponent<T extends undefined | void ? { initialState?: T } : { initialState: T }>;
 };
 
 export const createStore = <R, T extends any = void>(hook: (initialState: T) => R): Store<R, T> => {
